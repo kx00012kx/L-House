@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="box">
+    <view class="door">
+      <view class="icon">
+        <image src="../../img/l-h-1.png"></image>
+      </view>
+     
+        <label>
+          <text>房号:</text>
+          <input placeholder="101" type="number" bindblur="roomnumber"/>
+        </label>
+        <label>
+          <text>密码:</text>
+          <input placeholder="第一次找房东索取" type="password" bindblur="password" />
+        </label>
+      
+      <view class="button">
+        <button size="default" bindtap="renting">租房</button>
+        <button size="default" bindtap="login">登录</button>
+      </view>
+    </view>
+    <view class="holle">欢迎来到L-House!</view>
+  </view>
+  
+</view>

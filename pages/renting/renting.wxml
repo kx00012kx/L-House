@@ -1,0 +1,32 @@
+
+<!--pages/renting/renting.wxml-->
+<view class="container">
+  <view class="box">
+    <view class="avatar">
+      <image src="{{anatarUrl}}"></image>
+      <text>{{roomNum}}房</text>
+    </view>
+
+    <view class="floor" wx:for="{{floor}}">
+
+      <view class="title">第{{item.title}}层</view>
+      
+      <view class="item_box">
+
+        <block wx:for="{{item.room}}">
+          <navigator url="../detail/detail?roomNum={{item.num}}">
+            <view class="item">
+              <image src="{{item.iconUrl}}"></image>
+              <text>{{item.num}}</text>
+            </view>
+          </navigator>
+        </block>
+
+      </view>
+    </view>
+
+
+  </view>
+</view>
+<import src="../../template/template.wxml" />
+<template is="tabBar" data="{{...template}}" />

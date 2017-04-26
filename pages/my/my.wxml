@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="box">
+    <view class="avatar">
+      <image src="{{anatarUrl}}"></image>
+      <text>{{roomNum}}房</text>
+    </view>
+
+    <view  class="info">
+      <view class="title">我的房租</view>
+      <view class="item_box">
+        <block wx:for="{{roomerInfo}}">
+          <view class="info_item" data-value="{{item.value}}"  bindtap="check">
+            <image src="{{item.iconUrl}}"></image>
+            <text>{{item.title}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <view  class="info">
+      <view class="title">公共服务</view>
+      <view class="item_box">
+        <block wx:for="{{pub}}">
+          <view class="info_item" data-mess="{{item.mess}}" data-value="{{item.value}}"  bindtap="click">
+            <image src="{{item.iconUrl}}"></image>
+            <text>{{item.title}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  
+<import src="../../template/template.wxml" />
+<template is="tabBar" data="{{...template}}" />
+</view>
+ 

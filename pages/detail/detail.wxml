@@ -1,0 +1,61 @@
+
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="box">
+    <view class="avatar">
+      <image src="{{anatarUrl}}"></image>
+      <text>{{roomNum}}房</text>
+    </view>
+
+    <view class="layout">
+        <view class="name">
+            <text>客厅</text>
+            <text>卧室1</text>
+            <text>卧室2</text>
+            <text>厨房</text>
+            <text>卫生间</text>
+        </view>
+        <view class="value">
+            <image src="{{icon_2}}"></image>
+            <image src="{{icon_2}}"></image>
+            <image src="{{icon_1}}"></image>
+            <image src="{{icon_2}}"></image>
+            <image src="{{icon_2}}"></image>
+        </view>
+    </view>
+    <view class="room_info">
+        <view class="type"> 
+            <text class="little"></text>         
+            <text>长租</text>
+            <text>短租</text>
+        </view>
+        <view class="type">
+            <text class="little">房租</text>
+            <text>{{long.rent}}</text>
+            <text>{{short.rent}}</text>
+        </view>
+        <view class="type">
+            <text class="little">水</text>
+            <text>{{long.water}}</text>
+            <text>{{short.water}}</text>
+        </view>
+        <view class="type">
+            <text class="little">电</text>
+            <text>{{long.elec}}</text>
+            <text>{{short.elec}}</text>
+        </view>
+        <view class="type">
+            <text class="little">卫生</text>
+            <text>{{long.hyg}}</text>
+            <text>{{short.hyg}}</text>
+        </view>
+        <view class="type">
+            <text class="little">押金</text>
+            <text>{{long.crti}}</text>
+            <text>{{short.crti}}</text>
+        </view>
+    </view>
+
+    <button bindtap="call" type="default" style="background-color:#00bcd4;color:#fff">联系房东</button>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+.tabBar{
+    width:100%;
+    height:80px;
+    border-top:1px solid #999;
+    position: fixed;
+    bottom:0;
+}
+.left,.right{
+    width:50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.left image,.right image{
+    width:40px;
+    height:40px;
+}
+.left text,.right text{
+    font-size:12px;
+}

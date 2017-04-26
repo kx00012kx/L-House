@@ -1,0 +1,16 @@
+<template name="tabBar">
+  <view class="tabBar">
+   
+      <view class="left" bindtap="go_my">
+        <image src="{{left.iconUrl}}"></image>
+        <text>{{left.title}}</text>
+      </view>
+    
+    
+      <view class="right" bindtap="go_rent">
+        <image src="{{right.iconUrl}}"></image>
+        <text>{{right.title}}</text>
+      </view>
+    
+  </view>
+</template>
